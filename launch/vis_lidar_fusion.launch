@@ -1,0 +1,12 @@
+<launch>
+    <arg name="points_src" default="/vlp_t/velodyne_points" /> <!-- PointCloud source topic-->
+    <arg name="image_src" default="/Logitech_BRIO/image_semantic_color/compressed" /> <!-- Raw Image source topic to be rectified-->
+    <arg name="camera_info_src" default="/Logitech_BRIO/camera_info" /> <!-- CameraInfo source topic-->
+
+    <node name="vis_lidar_fusion" pkg="visual_lidar_fusion" type="visual_lidar_fusion" output="screen">
+        <param name="points_src" value="$(arg points_src)" />
+        <param name="image_src" value="$(arg image_src)" />
+        <param name="camera_info_src" value="$(arg camera_info_src)" />
+    </node>
+
+</launch>

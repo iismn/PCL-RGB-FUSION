@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>visual_lidar_fusion</name>
+  <version>1.0.0</version>
+  <description>VISUAL-LiDAR Fusion API</description>
+  <maintainer email="iismn@kaist.ac.kr">LeeSangMin</maintainer>
+  <license>Apache 2</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>cv_bridge</depend>
+  <depend>image_transport</depend>
+  <depend>pcl_conversions</depend>
+  <depend>pcl_ros</depend>
+  <depend>qtbase5-dev</depend>
+  <depend>roscpp</depend>
+  <depend>tf</depend>
+  <depend>tf_conversion</depend>
+</package>
